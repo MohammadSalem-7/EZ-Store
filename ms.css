@@ -1,0 +1,372 @@
+/* يا فتاح يا عليم يا رزاق يا كريم */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  color: #ffffff;
+  min-height: 100vh;
+  background-color: #0a0a0a;
+  position: relative;
+  overflow-x: hidden;
+}
+
+a {
+  color: #0ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  color: white;
+}
+
+.space-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('mee.jpg') no-repeat center center / cover;
+  z-index: -1;
+  filter: brightness(0.4) saturate(1.5);
+}
+
+.main-header {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 2rem;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.nav-links a {
+  margin: 0 10px;
+  font-weight: bold;
+  color: #fff;
+}
+.nav-links .active {
+  color: #0ff;
+  text-decoration: underline;
+}
+
+.currency-selector {
+  background: #111;
+  color: #0ff;
+  border: 1px solid #0ff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.id-selector,
+.product-card select,
+.product-card input[type="url"] {
+  background: #111;
+  color: #0ff;
+  border: 1px solid #0ff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.product-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.glow-text {
+  font-size: 2rem;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.enter-button {
+  margin-top: 60px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background: transparent;
+  border: 2px solid #0ff;
+  color: #0ff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.enter-button:hover {
+  background: #0ff;
+  color: #000;
+  box-shadow: 0 0 20px #0ff;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.product-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #0ff;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 20px #0ff40f22;
+}
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #00f7ff88;
+}
+
+.product-title {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  color: #0ff;
+}
+
+.product-desc {
+	font-size: 1rem;
+	color: #ccc;
+	font-family: 'Cairo', sans-serif;
+	line-height: 1.6;
+}
+
+
+.product-price {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.add-to-cart-btn {
+  padding: 10px 20px;
+  border: 2px solid #0ff;
+  background: transparent;
+  color: #0ff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.add-to-cart-btn:hover {
+  background: #0ff;
+  color: #000;
+  box-shadow: 0 0 15px #0ff;
+}
+
+.cart-container {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+.cart-items {
+  margin-bottom: 30px;
+}
+.cart-item {
+  padding: 15px;
+  border: 1px solid #0ff;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.cart-summary input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #0ff;
+  background: #111;
+  color: #0ff;
+}
+
+.checkout-button {
+  background: #0ff;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #0ff;
+  transition: 0.3s;
+}
+.checkout-button:hover {
+  background: #00cfff;
+  box-shadow: 0 0 25px #00e6ff;
+}
+
+.about-container,
+.suppport-container {
+  max-width: 800px;
+  margin: 100px auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #0ff;
+}
+
+.discord-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #7289DA;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.discord-btn:hover {
+  background: #5b6eae;
+}
+
+.logo-img {
+  width: 50px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.danger {
+  background-color: #a00;
+  color: white;
+}
+.danger:hover {
+  background-color: #c00;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-top: 1px solid #0ff;
+  margin-top: 50px;
+}
+
+.footer-link {
+  font-weight: bold;
+  color: #0ff;
+}
+.footer-link:hover {
+  color: white;
+}
+
+@keyframes fadeln {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .products-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .product-card {
+    padding: 15px;
+  }
+
+  .product-img {
+    height: 160px;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .currency-selector {
+    margin-top: 10px;
+  }
+}
+
+.products-container::after {
+  content: "";
+  display: block;
+  height: 100px;
+}
+
+select.id-selector {
+  background-color: #000;
+  color: #0ff;
+  border: 1px solid #0ff;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  font-family: 'Tajawal', sans-serif;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+select.id-selector:hover:not(:focus) {
+  background-color: #0ff;
+  color: #000;
+  box-shadow: 0 0 10px #0ff;
+}
+
+select.id-selector:focus {
+  background-color: #000;
+  color: #0ff;
+  box-shadow: none;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}

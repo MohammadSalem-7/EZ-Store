@@ -1,0 +1,184 @@
+<!DOCTYPE html>     <!--يافتاح ياعليم يارزاق ياكريم-->
+<html lang="en">
+<head>
+<meta name="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Ezel Role Play - Srote💎</title>
+<link rel="stylesheet" href="ms.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="store-page">
+<div class="space-background"></div>
+<header class="main-header">
+<img src="01.png" alt="شعار سيرفر " class="logo-img">
+<h1 class="logo"><a href="https://discord.gg/c6pj9exdRJ">Ezel Role Play</a></h1>
+<nav class="nav-links">
+<a href="store.html" class="active">Products</a>
+<a href="cart.html">Cart</a>
+<a href="about.html">About</a>
+<a href="support.html">Support</a>
+</nav>
+<select id="currencySelector" class="currency-selector">
+<option value="USD" selected>$ USD</option>
+<option value="SAR" selected>ر.س SAR</option>
+<option value="EGP" selected>ج.م EGP</option>
+<option value="CPP" selected>credits</option>
+</select>
+</header>
+<main class="products-container">
+<!--اول منتتج-->
+<div class="product-card" data-id="1" data-price="20">
+   <img src="https://i.top4top.io/p_3465y198d1.jpg" alt="صوره المنتح" class="product-img">
+   <h2 class="product-title">ID مميز</h2>
+   <p class="product-desc"><br>اختر رقم الـ ID من القائمة:</p>
+   
+   <!-- هنا القائمة المنسدلة -->
+   <select class="id-selector">
+   <option value="" disabled selected>اختر ID</option>
+  <option value="0" data-img="https://j.top4top.io/p_3465taykl2.jpg">ID 0</option>
+  <option value="6" data-img="https://k.top4top.io/p_3465o1o733.jpg">ID 6</option>
+  <option value="22" data-img="https://l.top4top.io/p_3465bfgze4.jpg">ID 22</option>
+  <option value="33" data-img="https://a.top4top.io/p_3465gr5s65.jpg">ID 33</option>
+  <option value="44" data-img="https://b.top4top.io/p_3465ozg566.jpg">ID 44</option>
+  <option value="55" data-img="#">ID 55</option>
+  <option value="66" data-img="#">ID 66</option>
+  <option value="77" data-img="#">ID 77</option>
+  <option value="88" data-img="#">ID 88</option>
+  <option value="99" data-img="#">ID 99</option>
+  <option value="100" data-img="#">ID 100</option>
+</select>
+
+   <p class="product-price" data-base="20">$20</p>
+   <button class="add-to-cart-btn">Add to Cart</button>
+</div>
+
+	 <!------------------------------------------------------------>
+<!-- تاني منتج -->
+<div class="product-card" data-id="2">
+  <img src="https://j.top4top.io/p_3465taykl2.jpg" alt="صورة السيارة" class="product-img">
+  <h2 class="product-title">🚗 سيارات خاصة</h2>
+  <p class="product-desc">اختر نوع السيارة من القائمة:</p>
+
+  <select class="id-selector">
+  <option value="" disabled selected>اختر نوع السيارة</option>
+    <option value="bmw" data-img="https://l.top4top.io/p_3465bfgze4.jpg" data-desc="سيارة ألمانية أنيقة وقوية." data-price="120">BMW</option>
+    <option value="mercedes" data-img="#" data-desc="رفاهية وفخامة من مرسيدس." data-price="130">Mercedes</option>
+    <option value="ferrari" data-img="#" data-desc="سرعة وأداء عالي من فيراري." data-price="180">Ferrari</option>
+    <option value="tesla" data-img="#" data-desc="سيارة كهربائية ذكية من تسلا." data-price="150">Tesla</option>
+    <option value="range" data-img="#" data-desc="سيارة دفع رباعي قوية." data-price="140">Range Rover</option>
+    <option value="camaro" data-img="#" data-desc="عضلات أمريكية من شيفروليه." data-price="110">Camaro</option>
+  </select>
+
+  <p class="product-desc dynamic-desc"></p>
+  <p class="product-price dynamic-price" data-base="100">$100</p>
+  <button class="add-to-cart-btn">Add to Cart</button>
+</div>
+
+
+	 <!------------------------------------------------------------>
+<!--تالت منتج-->
+<div class="product-card" data-id="3">
+  <img src="https://k.top4top.io/p_3465o1o733.jpg" alt="صورة البيت" class="product-img">
+  <h2 class="product-title">🏰 بيوت وقصور</h2>
+  <p class="product-desc">اختر نوع العقار من القائمة:</p>
+
+  <select class="id-selector">
+  <option value="" disabled selected>اختر نوع المنزل</option>
+    <option value="villa" data-img="https://l.top4top.io/p_3465bfgze4.jpg" data-desc="فيلا فخمة بحديقة خاصة." data-price="200">فيلا</option>
+    <option value="palace" data-img="#" data-desc="قصر ملكي بمرافق متكاملة." data-price="500">قصر</option>
+    <option value="apartment" data-img="#" data-desc="شقة مريحة في منطقة راقية." data-price="100">شقة</option>
+    <option value="farm" data-img="#" data-desc="مزرعة ريفية واسعة." data-price="150">مزرعة</option>
+    <option value="penthouse" data-img="#" data-desc="بنتهاوس بإطلالة بانورامية." data-price="300">بنتهاوس</option>
+  </select>
+
+  <p class="product-desc dynamic-desc"></p>
+  <p class="product-price dynamic-price" data-base="100">$100</p>
+  <button class="add-to-cart-btn">Add to Cart</button>
+</div>
+
+	  <!------------------------------------------------------------>
+<!--رابع منتج-->
+<div class="product-card" data-id="4" data-price="75">
+  <img src="https://b.top4top.io/p_3465ozg566.jpg" alt="عضوية برايم" class="product-img">
+  <h2 class="product-title">💎 عضوية برايم</h2>
+  <p class="product-desc">
+    عضوية مميزة تمنحك مزايا حصرية داخل السيرفر مثل:
+    <br>✨ لون مميز + رتبة برايم + خصومات
+  </p>
+  <p class="product-price" data-base="75">$75</p>
+  <button class="add-to-cart-btn">Add to Cart</button>
+</div>
+
+		 <!------------------------------------------------------------>
+<!--خامس منتج-->
+				<div class="product-card" data-id="5" data-price="120">
+  <img src="https://b.top4top.io/p_3465ozg566.jpg" alt="عضوية برايم بلس" class="product-img">
+  <h2 class="product-title">💎 عضوية برايم بلس</h2>
+  <p class="product-desc">
+    أقوى عضوية في السيرفر تشمل كل مزايا برايم بالإضافة إلى:
+    <br>🚀 دخول خاص + غرف حصرية + مزايا إضافية
+  </p>
+  <p class="product-price" data-base="120">$120</p>
+  <button class="add-to-cart-btn">Add to Cart</button>
+</div>
+
+		 <!------------------------------------------------------------>
+ <!--سادس منتج-->
+			<div class="product-card" data-id="6">
+  <img src="https://b.top4top.io/p_3465ozg566.jpg" alt="عملات GC" class="product-img">
+  <h2 class="product-title">💰 عملات GC</h2>
+  <p class="product-desc">اختر الكمية:</p>
+
+  <select class="id-selector">
+  <option value="" disabled selected>أختر الكمية</option>
+    <option value="1000" data-img="https://l.top4top.io/p_3465bfgze4.jpg" data-desc="1000 GC عملة" data-price="10">1000 GC</option>
+    <option value="5000" data-img="#" data-desc="5000 GC عملة" data-price="45">5000 GC</option>
+    <option value="10000" data-img="#" data-desc="10000 GC عملة" data-price="85">10000 GC</option>
+    <option value="25000" data-img="#" data-desc="25 ألف GC عملة" data-price="190">25000 GC</option>
+  </select>
+
+  <p class="product-desc dynamic-desc"></p>
+  <p class="product-price dynamic-price" data-base="10">$10</p>
+  <button class="add-to-cart-btn">Add to Cart</button>
+</div>
+	 
+		 <!------------------------------------------------------------>
+ <!--سابع منتج-->
+				  <div class="product-card" data-id="7">
+  <img src="https://b.top4top.io/p_3465ozg566.jpg" alt="يخت أو طيارة" class="product-img">
+  <h2 class="product-title">🛩️ يخوت / طيارات خاصة</h2>
+  <p class="product-desc">اختر نوع المركبة:</p>
+
+  <select class="id-selector">
+  <option value="" disabled selected>اختر نوع المركبة</option>
+    <option value="jet" data-img="https://l.top4top.io/p_3465bfgze4.jpg" data-desc="طائرة نفاثة خاصة بسرعات عالية." data-price="500">Jet</option>
+    <option value="helicopter" data-img="#" data-desc="هليكوبتر خاصة للتنقل السريع." data-price="400">Helicopter</option>
+    <option value="yacht" data-img="#" data-desc="يخت فاخر للإبحار والاحتفالات." data-price="600">Yacht</option>
+    <option value="speedboat" data-img="#" data-desc="قارب سريع للاستعراض." data-price="350">Speedboat</option>
+  </select>
+
+  <p class="product-desc dynamic-desc"></p>
+  <p class="product-price dynamic-price" data-base="500">$500</p>
+  <button class="add-to-cart-btn">Add to Cart</button>
+</div>
+
+		 <!------------------------------------------------------------>
+ <!--8منتج-->
+				   <div class="product-card" data-id="8" data-price="50">
+  <img src="https://b.top4top.io/p_3465ozg566.jpg" alt="صورة مميزة" class="product-img">
+  <h2 class="product-title">🖼️ صورة مميزة</h2>
+  <p class="product-desc dynamic-desc">الصورة ستظهر في لوحة اللاعبين.</p>
+  <p class="product-price dynamic-price" data-base="50">$50</p>
+  <button class="add-to-cart-btn">Add to Cart</button>
+</div>
+ <!------------------------------------------------------------>
+  <!--------------------------------كفايه كده------------------->
+  </main>
+<footer class="footer"><span><b><a href="https://discord.gg/c6pj9exdRJ">Ezel Role Play</a></b> © 2025</span>
+    <span>| |</span> Web Dev : <a href="https://www.facebook.com/mohamed.salemahmed.10236?mibextid=ZbWKwL" target="_blank" class="footer-link">Mohammad Salem</a>
+	®</footer> 
+ <script src="ms.js"></script>
+ </body>
+</html>

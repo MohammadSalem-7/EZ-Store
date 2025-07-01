@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--يافتاح ياعليم يارزاق ياكريم-->
+<html lang="en">
+  <head>
+    <meta name="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Ezel Role Play- Cart💎</title>
+    <link rel="stylesheet" href="ms.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="cart-page">
+    <div class="space-background"></div>
+    <header class="main-header">
+      <img src="01.png" alt="شعار سيرفر " class="logo-img" />
+      <h1 class="logo">
+        <a href="https://discord.gg/c6pj9exdRJ">Ezel Role Play</a>
+      </h1>
+      <nav class="nav-links">
+        <a href="store.html">Products</a>
+        <a href="cart.html" class="active">Cart</a>
+        <a href="about.html">About</a>
+        <a href="support.html">Support</a>
+      </nav>
+      <select id="currencySelector" class="currency-selector">
+        <option value="USD" selected>$ USD</option>
+        <option value="SAR" selected>ر.س SAR</option>
+        <option value="EGP" selected>ج.م EGP</option>
+        <option value="CPP" selected>credits</option>
+      </select>
+    </header>
+    <main class="cart-container">
+      <h2>Your Cart</h2>
+      <div id="cart-items" class="cart-items"></div>
+
+      <div class="cart-summary">
+        <label for="customerName">Your Name:</label>
+        <input type="text" id="customerName" placeholder="Enter your name" />
+        <p id="totalAmount">Total: $0</p>
+        <button id="checkoutBtn" class="checkout-button">Complete Order</button>
+        <button id="clearCartBtn" class="checkout-button danger">
+          🗑️ Clear Cart
+        </button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span
+        ><b><a href="https://discord.gg/c6pj9exdRJ">Ezel Role Play</a></b> ©
+        2025</span
+      >
+      <span>| |</span> Web Dev :
+      <a
+        href="https://www.facebook.com/mohamed.salemahmed.10236?mibextid=ZbWKwL"
+        target="_blank"
+        class="footer-link"
+        >Mohammad Salem</a
+      >
+      ®
+    </footer>
+    <script src="ms.js"></script>
+  </body>
+</html>

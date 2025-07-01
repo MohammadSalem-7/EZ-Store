@@ -1,0 +1,18 @@
+<!-- تاني منتج: سيارات خاصة -->
+<div class="product-card" data-id="2" data-price="100">
+  <img src="https://example.com/cars/default-car.png" alt="صورة السيارة" class="product-img">
+  <h2 class="product-title">🚗 سيارات خاصة</h2>
+  <p class="product-desc">اختر نوع السيارة من القائمة:</p>
+
+  <select class="id-selector">
+    <option value="bmw" data-img="https://example.com/cars/bmw.png">BMW</option>
+    <option value="mercedes" data-img="https://example.com/cars/mercedes.png">Mercedes</option>
+    <option value="ferrari" data-img="https://example.com/cars/ferrari.png">Ferrari</option>
+    <option value="tesla" data-img="https://example.com/cars/tesla.png">Tesla</option>
+    <option value="range" data-img="https://example.com/cars/range.png">Range Rover</option>
+    <option value="camaro" data-img="https://example.com/cars/camaro.png">Camaro</option>
+  </select>
+
+  <p class="product-price" data-base="100">$100</p>
+  <button class="add-to-cart-btn">Add to Cart</button>
+</div>
